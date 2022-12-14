@@ -7,6 +7,9 @@ const port = process.env.PORT || 5050;
 app.get("/home", (req, res) => {
     res.send('working....')
 })
+app.get("/about", (req, res) => {
+    res.send("about");
+})
 
 app.listen(port, () => {
     console.log("server is raning on the port is 5050");
